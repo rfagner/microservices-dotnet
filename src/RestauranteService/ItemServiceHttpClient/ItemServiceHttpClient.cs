@@ -14,6 +14,10 @@ namespace RestauranteService.ItemServiceHttpClient
             _client = client;
             _configuration = configuration;
         }
+        /// <summary>
+        /// Envia uma requisição http para o serviço ItemService
+        /// </summary>
+        /// <param name="readDto"></param>
         public async void EnviaRestauranteParaItemService(RestauranteReadDto readDto)
         {
             var conteudoHttp = new StringContent
